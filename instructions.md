@@ -21,10 +21,9 @@
     Assignment Instructions
   </summary>
 
-- In this assignment we manage employee data using classes and objects in a complex dictionary
-- Each employee has four data elements - Name, Department, Salary, Email
-- That data will be stored in an object
-- All such objects for each employee is stored in a dictionary whose keys will be the employee ID we calculate
+- In this assignment we manage employee data using classes and **storing these class objects in a dictionary**
+- Each employee object has four data elements - Name, Department, Salary, Email
+- All such employee objects are stored in a dictionary whose keys will be the employee ID
 </details>
 
 
@@ -50,7 +49,7 @@
   - Copy the code in validations.py from HW07
   - Copy the code from dict_functions 
   - Change the import statement in main.py to use class_functions module
-  - **Instructor will not provide employee data file**, it will be created using the program's `Add Employee` option **after writing code for that function**
+  - **Instructor will not provide employee data file**, it will be created using your program's `Add Employee` option (_after we write code for that function_)
 </details>
 
 ## In classes.py
