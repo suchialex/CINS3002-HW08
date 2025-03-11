@@ -48,7 +48,9 @@
 
   - Copy main.py
   - Copy the code in validations.py from HW07
+  - Copy the code from dict_functions 
   - Change the import statement in main.py to use class_functions module
+  - **Instructor will not provide employee data file**, it will be created using the program's `Add Employee` option **after writing code for that function**
 </details>
 
 ## In classes.py
@@ -68,9 +70,66 @@
   </summary>
 
   - Because our employee has four data fields, accept for parameters in the \_\_init\_\_ definition
+  - 🚩 Do not forget the default parameter
+  - Bind the employee data parameters to the object using self assingment. Ensure these are private attributes.
 </details>
 
-## In dict_functions.py
+<details>
+  <summary>
+    ✅ Define __str__() for the employee class
+  </summary>
+
+  - 🚩 Do not forget the default parameter in the definition
+  - Inside the \_\_str\_\_() function body
+    - Write a statement that returns a formatted string as follows
+    - Make sure to use the private attributes you created in the \_\_init\_\_() in the appropriate placeholders
+
+  Name: <employee_name>  
+  Department: <employee_department>  
+  Salary: <employee_salary>  
+  Email: <employee_email>  
+
+</details>
+
+<details>
+  <summary>
+    ✅ Define accessor method get_name() in the employee class
+  </summary>
+
+  - 🚩 Do not forget the default parameter in the definition
+  - Inside the get_name function body
+    - Write a statement that returns the private attribute for the employee name
+</details>
+
+<details>
+  <summary>
+    ✅ Define accessor methods get_dept, get_salary, get_email in the employee class
+  </summary>
+
+  - Return the appropriate private attribute in each method
+</details>
+
+
+<details>
+  <summary>
+    ✅ Define mutator method set_name() in the employee class
+  </summary>
+
+  - Accept the new name (choose a name for this new name) as a parameter
+  - 🚩 Do not forget the default parameter in the definition
+  - Inside the set_name function body
+    - Write a statement that assigns this new name to the existing private attribute for the employee name
+</details>
+
+<details>
+  <summary>
+    ✅ Define mutator methods set_dept, set_salary, set_email in the employee class
+  </summary>
+
+  - Return the appropriate private attribute in each method
+</details>
+
+## In class_functions.py
 
 <details>
   <summary>
@@ -82,98 +141,44 @@
 
 <details>
   <summary>
-    ✅ Define employee_operations
+    ✅ Modify file_to_dictionary
   </summary>
 
-  - For now place the keyword pass
+  - In the body of file_to_dictionary, change the file location to hw08/employees.bin
 </details>
 
 <details>
   <summary>
-    ✅ Define function file_to_dictionary()
+    ✅ Modify employee_operations
   </summary>
-  
-  - It accepts no parameters
-  - It returns the employees dictionary
-  - In the function body,
-    - Check if there is any data in employees.pkl inside the hw07 folder
-      - if no data, then return an empty dictionary
-    - Using context manager, unpickle the contents of the file employees.pkl to a dictionary and store in a variable of your choice
-    ⏩ Refer to 9-11
-    - Print this dictionary and check contents (you may comment it out after)
-    - Return this dictionary
+
+  - Comment out all the code except the file_to_dictionary call
+  - Print the dictionary (it should print empty dictionary, if you have used exception handling in that function)
 </details>
 
 
 <details>
   <summary>
-    ✅ Modify employee_operations() function
-  </summary>
-  
-  - Call the file_to_dictionary() after the pass statement
-  - Print the returned dictionary
-  - 📜 Execute your code to check if the dictionary is printed correctly, you may use suchi_print
-</details>
-
-## In validations.py
-
-<details>
-  <summary>
-    ✅ Define get_next_empid_dict() function
-  </summary>
-  
-  Parameters: Dictionary<br>
-  Returns: Integer<br>
-  Description: This functions finds the max employee ID in the dictionary and adds 1 to it and returns the next employee ID in a integer format<br>
-
-<details>
-  <summary>
-    🔑 Code Logic:
+    ✅ Modify add_employee() function
   </summary>
 
-  - If dictionary is empty, return 1234 (integer, not a string)
-  - Get the dictionary keys of the employees dictionary and store in a variable ⏩ Refer to 9-9f
-  - Get the max element from that ⏩ Refer to 7-15
-  - Add 1 to the max key and return it
-</details>
-
-</details>
-
-## In dict_functions.py
-
-<details>
-  <summary>
-    ✅ Define add_employee() function
-  </summary>
-
-Parameters: Dictionary  
-Returns: Dictionary  
-Description: We add a new employee to the dictionary and return the modified dictionary.
-
-<details>
-  <summary>
-    🔑 Code Logic:
-  </summary> 
-
-  - Employee ID is obtained from function call to get_next_employeeid() 
-  - Name is obtained from function calls to validate_first_name() and validate_last_name()  
-  - Email is obtained from a function call to generate_email()
-  - Department is obtained from a function call to validate_dept()
-  - Salary is obtained from a function call to validate_salary()
-  - Using all these values create a dictionary named `new_employee` with the  key/value pairs  
-  "name" -> Name  
-  "dept" -> Department  
-  "email" -> Email  
-  "salary" -> Salary
-
-  - Now, to the employees dictionary add a new key/value pair
+  - After the code to get all the employee data fields, create an object of the Employee class named `new_employee` by passing them in the same order as used in the initializer method  
+  - To the employees dictionary add a new key/value pair
     - key is the calculated employee ID and
-    - value is new_employee dictionary
+    - value is new employee object
     - ⏩ Refer to 9-4a
   - Print `Added Employee`
-  - Return employees dictionary
+  - Return employees dictionary (optional if you decide to keep the dictionary name the same in all functions)
 </details>
 
+</details>
+
+<details>
+  <summary>
+    ✅ Modify dictionary_to_file
+  </summary>
+
+  - In the body of dictionary_to_file, change the file location to hw08/employees.bin
 </details>
 
 
@@ -182,38 +187,24 @@ Description: We add a new employee to the dictionary and return the modified dic
     ✅ Call add_employee()
   </summary>
   
-  - In employee_operations() function, after the file_to_dictionary() call add_employee() by passing employees as the argument
+  - In employee_operations() function, uncomment whatever code you need to call
+    - add_employee()
+    - **and dictionary_to_file()**
+  - Execute the program and add a new employee and Exit out of the program
+  - If your code is correct, a new file called employees.bin will be created in hw08 folder. It should have some human un-readable data
+  - This file will work with only your code (because the attribute names you may have chosen will not match with other students' choice)
 </details>
+
+
 
 <details>
   <summary>
-    ✅ Define lookup_employee()
+    ✅ lookup_employee()
   </summary>
-
-  Parameters: Dictionary, Integer - (employee dictionary, employee_id)  
-  Returns: Boolean (True if employee is found, False if not found)  
-  Description: We check if the employee ID is present in the employee dictionary and if found, print all the available data elements for that employee in a pretty format like this  
-Name: Mia Rose  
-Department: CINS  
-Email: mia@company.com  
-Salary: 45000
-
-<details>
-  <summary>
-    🔑 Code Logic:
-  </summary> 
-
-  - Convert the user provided employee ID to integer (this might raise exception if user enteres non-numeric values, so use exception handling)
-  - Using in operator check if the employee ID is in the dictionary   ⏩ Refer to 9-6c
-  - If yes,
-    - print the name, department, email and salary
-    - return True
-  - Else
-    - print `Employee Not Found`
-    - return False
-
-🚩 Important: Before you print each data element, make sure that key exists for that employee. ⏩ Refer to 9-6c or use the get method with the second parameter
-</details>
+  
+  - Delete the print statement(s) in the if block and simply print the employee object at the key provided by the user
+  - The print statement will call the str() method and print all the data correctly
+  
 </details>
 
 <details>
@@ -221,45 +212,29 @@ Salary: 45000
     ✅ Call lookup_employee() after add_employee()
   </summary>
 
-  - Get user input for the employee ID that needs to be looked up
-  - Call lookup_employee with the employees dictionary and the above employee ID as arguments
-  - Test your code with the most recently added employee
+  - In employee_operations() function, uncomment whatever code you need to call lookup_employee
+  - 📜 Test your code with the most recently added employee's ID
 </details>
 
 
 <details>
   <summary>
-    ✅ Define function modify_name()
+    ✅ Modify function modify_name()
   </summary>
 
-  Parameters: Dictionary  
-  Returns: Dictionary  
-  Description: We use the lookup_employee function to see if the employee ID is present in our employee dictionary, if yes, we get the new name from the user and modify the dictionary appropriately
-  
-<details>
-  <summary>
-    🔑 Code Logic:
-  </summary>
-  
-  - Ask user to provide the employee ID to modify name
-  - Call the function lookup_employee using employees dictionary and the above employee ID as arguments and store returned value in a variable called found
-  - if found is true
-    - we ask the user to give us a valid name using a call to the validate_first_name and validate_last_name functions
-    - Then we find the appropriate dictionary element and modify it  ⏩ Refer to 9-4a
-    - 🚩 Do not forget to change the employee id to integer
-    - Print `Name Modified Successfully`
-  - Outside if block, return the employees
+  - Inside the if block, after calculating the new name using calls to the validate_first_name and validate_last_name functions
+  - Then we find the appropriate dictionary element using employee_id (converted to integer) as the key and store it in a variable, say `matched_employee`
+  - using this matched_employee object, call the set_name method by passing the new name as argument
 </details>
 </details>
 
 
 <details>
   <summary>
-    ✅ Call modify_name() after lookup_employee()
+    ✅ Call modify_name()
   </summary>
 
-  - Call modify_name using the employees dictionary as an argument
-  - Print the employees dictionary (you may comment it out later)
+  - In employee_operations() function, uncomment whatever code you need to call modify_name
   - Test your code and make sure employee name is being modified correctly
 </details>
 
@@ -269,7 +244,7 @@ Salary: 45000
     ✅ Same for modify_department, modify_salary
   </summary>
 
-  - Do the same steps as above for modifying department and salary
+  - Do the same steps as above for modifying department and salary by calling the appropriate set/mutator methods defined in the class
 </details>
 
 
@@ -345,25 +320,7 @@ Salary: 45000
 </details>
 
 
-<details>
-  <summary>
-    ✅ Define dictionary_to_file function
-  </summary>
 
-  Parameters: Dictionary  
-  Return: None 
-
-  - Pickle the employees dictionary to employees.pkl file in the employees folder  Refer to ⏩ 9-10
-
-</details>
-
-<details>
-  <summary>
-    ✅ Call  dictionary_to_file()
-  </summary>
-
-  - Call dictionary_to_file() passing the employees dictionary as argument
-</details>
 
 <details>
   <summary>
