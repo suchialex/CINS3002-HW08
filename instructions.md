@@ -127,6 +127,7 @@
   </summary>
 
   - Return the appropriate private attribute in each method
+  - In this project, we are not allowing the user to change the email address of an employee, hence we are not writing a mutator method for it
 </details>
 
 ## In class_functions.py
@@ -199,11 +200,11 @@
 
 <details>
   <summary>
-    ✅ lookup_employee()
+    ✅ Modify lookup_employee()
   </summary>
   
   - Delete the print statement(s) in the if block and simply print the employee object at the key provided by the user
-  - The print statement will call the str() method and print all the data correctly
+  - This print statement will call the str() method and print all the data correctly
   
 </details>
 
@@ -223,8 +224,8 @@
   </summary>
 
   - Inside the if block, after calculating the new name using calls to the validate_first_name and validate_last_name functions
-  - Then we find the appropriate dictionary element using employee_id (converted to integer) as the key and store it in a variable, say `matched_employee`
-  - using this matched_employee object, call the set_name method by passing the new name as argument
+  - Then we find the appropriate dictionary element using employee_id (converted to integer) as the key and store it in a variable, say `found_employee`
+  - using this found_employee object, call the set_name method by passing the new name as argument
 </details>
 </details>
 
@@ -234,7 +235,7 @@
     ✅ Call modify_name()
   </summary>
 
-  - In employee_operations() function, uncomment whatever code you need to call modify_name
+  - In employee_operations() function, uncomment whatever code you need to call modify_name()
   - Test your code and make sure employee name is being modified correctly
 </details>
 
