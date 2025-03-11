@@ -42,12 +42,12 @@
 
 <details>
   <summary>
-    ✅ Copy code from hw06
+    ✅ Copy code from hw07
   </summary>
 
   - Copy main.py
   - Copy the code in validations.py from HW07
-  - Copy the code from dict_functions 
+  - Copy the code from dict_functions (we will modify these instead of writing them from scratch)
   - Change the import statement in main.py to use class_functions module
   - **Instructor will not provide employee data file**, it will be created using your program's `Add Employee` option (_after we write code for that function_)
 </details>
@@ -162,14 +162,13 @@
     ✅ Modify add_employee()
   </summary>
 
+  - 💡 We can use the same function generate_employee_id_dict() we wrote in validations.py (because employees is still a dictionary)
   - After the code to get all the employee data fields, create an object of the Employee class named `new_employee` by passing them in the same order as used in the initializer method  
   - To the employees dictionary add a new key/value pair
     - key is the calculated employee ID and
     - value is new employee object
-    - ⏩ Refer to 9-4a
   - Print `Added Employee`
   - Return employees dictionary (optional if you decide to keep the dictionary name the same in all functions)
-</details>
 
 </details>
 
@@ -191,8 +190,8 @@
     - add_employee()
     - **and dictionary_to_file()**
   - Execute the program and add a new employee and Exit out of the program
-  - If your code is correct, a new file called employees.bin will be created in hw08 folder. It should have some human un-readable data
-  - This file will work with only your code (because the attribute names you may have chosen will not match with other students' choice)
+  - If your code is correct, a new file called employees.bin will be created in hw08 folder and will have some un-readable data
+  - This file will work with only your code (because the attribute names you have chosen may be different from other students' choice)
 </details>
 
 
@@ -203,7 +202,7 @@
   </summary>
   
   - Delete the print statement(s) in the if block and simply print the employee object at the key provided by the user
-  - This print statement will call the str() method and print all the data correctly
+  - This print statement will call the \_\_str\_\_() method and print all the data correctly
   
 </details>
 
@@ -222,9 +221,9 @@
     ✅ Modify modify_name()
   </summary>
 
-  - Inside the if block, after calculating the new name using calls to the validate_first_name and validate_last_name functions
-  - Then we find the appropriate dictionary element using employee_id (converted to integer) as the key and store it in a variable, say `found_employee`
-  - using this found_employee object, call the set_name method by passing the new name as argument
+  - Inside the if block, after calculating the new name (using calls to the validate_first_name and validate_last_name functions)
+  - We find the appropriate dictionary element using employee_id (converted to integer) as the key and store it in a variable, say `found_employee`
+  - Using this found_employee object, call the set_name method by passing the new name as argument
 </details>
 </details>
 
@@ -244,20 +243,13 @@
     ✅ Same for modify_department, modify_salary
   </summary>
 
-  - Do the same steps as above for modifying department and salary by calling the appropriate set/mutator methods defined in the class
+  - Do the same steps as above for modifying department and salary by calling the appropriate set methods (aka mutator methods) defined in the class
 </details>
 
 
 <details>
   <summary>
     ✅ Modify display_employees()
-  </summary>
-
-
-
-<details>
-  <summary>
-    🔑 Code Logic:
   </summary>
 
   - Inside the for loop
@@ -269,8 +261,6 @@
 
 </details>
 
-</details>
-
 
 <details>
   <summary>
@@ -278,7 +268,7 @@
   </summary>
 
   - Uncomment appropriate code in employee_operations function to call display_employees()
-  - Test your code to make sure your employee(s) are being displayed correctly
+  - Test your code to make sure the employee(s) are being displayed correctly
 </details>
 
 
