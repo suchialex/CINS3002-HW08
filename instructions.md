@@ -123,7 +123,7 @@
 
 <details>
   <summary>
-    ✅ Define mutator methods set_dept, set_salary, set_email in the employee class
+    ✅ Define mutator methods set_dept and set_salary in the employee class
   </summary>
 
   - Return the appropriate private attribute in each method
@@ -250,21 +250,19 @@
 
 <details>
   <summary>
-    ✅ Define display_employees()
+    ✅ Modify display_employees()
   </summary>
 
-  Parameters: Dictionary  
-  Returns: None  
-  Description: We use a for loop to go over the employee dictionary and print all data elements in a tabular format
+
 
 <details>
   <summary>
     🔑 Code Logic:
   </summary>
 
-  - Start a for loop to go over the employee dictionary's values
-    - Get each data element using the loop variable
-    - For example, employee name would be  `<loop_variable>.get("name", "-")`
+  - Inside the for loop
+    - Get each data element using the loop variable (employee object) and the appropriate get methods
+    - For example, employee name would be  `<loop_variable>.get_name()`
     - Do the same for other data elements, department, salary, email etc
   - Display all these values in a tabular format
   - You may choose column widths and alignment to fit your data
@@ -279,33 +277,17 @@
     ✅ Call  display_employees()
   </summary>
 
-  - Call display_employees() with the employees dictionary as argument
-  - Test your code
+  - Uncomment appropriate code in employee_operations function to call display_employees()
+  - Test your code to make sure your employee(s) are being displayed correctly
 </details>
 
 
 <details>
   <summary>
-    ✅ Define delete_employee()
+    ✅ delete_employee()
   </summary>
 
-  Parameters: Dictionary  
-  Returns: Dictionary  
-  Description: We use the lookup_employee function to see if the employee ID is present in our employee dictionary, if yes, we delete that employee from the dictionary
-  
-<details>
-  <summary>
-    🔑 Code Logic:
-  </summary>
-  
-  - Ask user to provide the employee ID to delete
-  - Call the function lookup_employee using employees dictionary and the above employee ID as arguments and store returned value in a variable called found
-  - if found is true
-    - Delete the appropriate dictionary element  ⏩ Refer to 9-6a
-    - 🚩 Do not forget to change the employee id to integer
-    - Print `Employee Deleted Successfully`
-  - Outside if block, return the employees
-</details>
+  - Nothing to change here, because we still have to delete an employee by deleting the dictionary element
 </details>
 
 
@@ -315,21 +297,7 @@
     ✅ Call  delete_employee()
   </summary>
 
-  - Call delete_employee() with the employees dictionary as argument
-  - Print the employees dictionary to test (you may comment it out later)
-</details>
-
-
-
-
-<details>
-  <summary>
-    ✅ Complete employee_operations() function
-  </summary>
-
-  - Call the file_to_dictionary() function
-  - Inside a while loop that runs **until user presses 0**, print menu of options, get user's choice and inside the if-elif-else blocks calls the appropriate functions
-  - Outside the while loop call dictionary_to_file() function
+  - Uncomment code in employee_operations to call delete_employee()
 </details>
 
 
@@ -340,7 +308,7 @@
     ✅ Copy code to replit
   </summary>
   
-  - Copy the contents of validations.py and dict_functions.py to replit under folder hw07
+  - Copy the contents of classes.py, validations.py and class_functions.py to replit under folder hw08
   - Comment out the existing import statement and code in main function body
   - Copy and paste the import statement and code from main.py in your PyCharm Project
   - Submit the URL on Canvas assignment
