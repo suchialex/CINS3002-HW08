@@ -142,7 +142,7 @@
 
 <details>
   <summary>
-    ✅ Modify file_to_dictionary
+    ✅ Modify file_to_dictionary()
   </summary>
 
   - In the body of file_to_dictionary, change the file location to hw08/employees.bin
@@ -150,7 +150,7 @@
 
 <details>
   <summary>
-    ✅ Modify employee_operations
+    ✅ Modify employee_operations()
   </summary>
 
   - Comment out all the code except the file_to_dictionary call
@@ -160,7 +160,7 @@
 
 <details>
   <summary>
-    ✅ Modify add_employee() function
+    ✅ Modify add_employee()
   </summary>
 
   - After the code to get all the employee data fields, create an object of the Employee class named `new_employee` by passing them in the same order as used in the initializer method  
@@ -176,10 +176,10 @@
 
 <details>
   <summary>
-    ✅ Modify dictionary_to_file
+    ✅ Modify dictionary_to_file()
   </summary>
 
-  - In the body of dictionary_to_file, change the file location to hw08/employees.bin
+  - In the body of dictionary_to_file(), change the file location to hw08/employees.bin
 </details>
 
 
@@ -220,7 +220,7 @@
 
 <details>
   <summary>
-    ✅ Modify function modify_name()
+    ✅ Modify modify_name()
   </summary>
 
   - Inside the if block, after calculating the new name using calls to the validate_first_name and validate_last_name functions
@@ -285,10 +285,10 @@
 
 <details>
   <summary>
-    ✅ delete_employee()
+    ✅ No action on delete_employee()
   </summary>
 
-  - Nothing to change here, because we still have to delete an employee by deleting the dictionary element
+  - Nothing to change here, because we still have to delete an employee by deleting the dictionary element, which in this assignment is an object (it was a dictionary in the previous assignment)
 </details>
 
 
@@ -299,6 +299,7 @@
   </summary>
 
   - Uncomment code in employee_operations to call delete_employee()
+  - 📜 Execute your code and ensure ALL employee operations are being performed correctly
 </details>
 
 
@@ -310,7 +311,8 @@
   </summary>
   
   - Copy the contents of classes.py, validations.py and class_functions.py to replit under folder hw08
+  - Upload your employees.pkl (it will NOT upload to hw08, you have to drag and drop it) - watch the solution video if you need help
   - Comment out the existing import statement and code in main function body
-  - Copy and paste the import statement and code from main.py in your PyCharm Project
+  - Copy the import statement and code from main.py in your PyCharm Project and paste it in the appropriate places in replit
   - Submit the URL on Canvas assignment
 </details>
