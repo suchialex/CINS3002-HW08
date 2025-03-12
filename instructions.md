@@ -67,14 +67,14 @@
     ✅ Define __init__() for the employee class
   </summary>
 
-  - Because our employee has four data fields, accept for parameters in the \_\_init\_\_ definition
+  - Because our employee has four data fields, accept for parameters in the \_\_init\_\_ definition ⏩ 10-3a (private attributes)
   - 🚩 Do not forget the default parameter
   - Bind the employee data parameters to the object using self assingment. Ensure these are private attributes.
 </details>
 
 <details>
   <summary>
-    ✅ Define __str__() for the employee class
+    ✅ Define __str__() for the employee class ⏩ 10-4a
   </summary>
 
   - 🚩 Do not forget the default parameter in the definition
@@ -91,7 +91,7 @@
 
 <details>
   <summary>
-    ✅ Define accessor method get_name() in the employee class
+    ✅ Define accessor method get_name() in the employee class ⏩ 10-5a
   </summary>
 
   - 🚩 Do not forget the default parameter in the definition
@@ -110,7 +110,7 @@
 
 <details>
   <summary>
-    ✅ Define mutator method set_name() in the employee class
+    ✅ Define mutator method set_name() in the employee class ⏩ 10-6a
   </summary>
 
   - Accept the new name (choose a name for this new name) as a parameter
@@ -223,7 +223,7 @@
 
   - Inside the if block, after calculating the new name (using calls to the validate_first_name and validate_last_name functions)
   - We find the appropriate dictionary element using employee_id (converted to integer) as the key and store it in a variable, say `found_employee`
-  - Using this found_employee object, call the set_name method by passing the new name as argument
+  - Using this found_employee object, call the set_name method by passing the new name as argument ⏩ 10-6b
 </details>
 </details>
 
@@ -254,7 +254,7 @@
 
   - Inside the for loop
     - Get each data element using the loop variable (employee object) and the appropriate get methods
-    - For example, employee name would be  `<loop_variable>.get_name()`
+    - For example, employee name would be  `<loop_variable>.get_name()` ⏩ 10-5b
     - Do the same for other data elements, department, salary, email etc
   - Display all these values in a tabular format
   - You may choose column widths and alignment to fit your data
@@ -300,7 +300,7 @@
   </summary>
   
   - Copy the contents of classes.py, validations.py and class_functions.py to replit under folder hw08
-  - Upload your employees.pkl (it will NOT upload to hw08, you have to drag and drop it) - watch the solution video if you need help
+  - Upload your employees.bin (it will NOT upload to hw08, you have to drag and drop it) or execute code and Add Employee to create a new employees.bin file
   - Comment out the existing import statement and code in main function body
   - Copy the import statement and code from main.py in your PyCharm Project and paste it in the appropriate places in replit
   - Submit the URL on Canvas assignment
