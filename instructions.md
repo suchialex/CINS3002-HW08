@@ -45,10 +45,9 @@
     ✅ Copy code from hw07
   </summary>
 
-  - Copy main.py
   - Copy the code in main.py and validations.py from HW07
   - Copy the code from dict_functions (we will modify these instead of writing them from scratch)
-  - Change the import statement in main.py to use class_functions module
+  - Change the import statement in main.py to use class_functions module in hw08
   - **Instructor will not provide employee data file**, it will be created using your program's `Add Employee` option (_after we write code for that function_)
 </details>
 
