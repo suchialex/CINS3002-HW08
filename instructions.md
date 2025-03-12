@@ -133,10 +133,11 @@
 
 <details>
   <summary>
-    ✅ Import the employee class
+    ✅ Imports
   </summary>
 
   - Using the from keyword, import the employee class you created in classes module
+  - Fix the import existing import statement to use validations from hw08 instead of hw07
 </details>
 
 <details>
@@ -144,7 +145,7 @@
     ✅ Modify file_to_dictionary()
   </summary>
 
-  - In the body of file_to_dictionary, change the file location to hw08/employees.bin
+  - In the body of file_to_dictionary, change the file location to `hw08/employees.bin`
 </details>
 
 <details>
@@ -177,7 +178,7 @@
     ✅ Modify dictionary_to_file()
   </summary>
 
-  - In the body of dictionary_to_file(), change the file location to hw08/employees.bin
+  - In the body of dictionary_to_file(), change the file location to `hw08/employees.bin`
 </details>
 
 
